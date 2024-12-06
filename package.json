@@ -1,0 +1,28 @@
+{
+  "name": "snacks",
+  "version": "1.0.0",
+  "description": "Esercitazioni JS",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlessandroSottosanti/snacks-js.git"
+  },
+  "keywords": [
+    "snacks",
+    "js"
+  ],
+  "author": "Alessandro Sottosanti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlessandroSottosanti/snacks-js/issues"
+  },
+  "homepage": "https://github.com/AlessandroSottosanti/snacks-js#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "express": "^4.21.2"
+  }
+}
