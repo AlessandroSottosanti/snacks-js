@@ -85,7 +85,7 @@ const CalculateSum = (first10Nums) => {
 }
 
 let total = CalculateSum(first10Nums);
-console.log('Somma:', total);
+console.log(chalk.yellow('Somma:'), chalk.green(total));
 
 
 // MEDIA
@@ -97,7 +97,7 @@ const calculateAverage = (total, first10Nums) => {
 
 const average = calculateAverage(total, first10Nums);
 
-console.log('Media:', average);
+console.log(chalk.yellow('Media:'), chalk.green(average));
 
 
 // SNACK 3
@@ -153,7 +153,6 @@ console.log(chalk.yellow('Lista invitati: ') + chalk.green(falseGuestsArray.join
 
 // SNACK 4
 
-console.log(randomNumbers);
 let oddSum = 0;
 
 // ciclo per verificare l'indice di ogni numero e sommare solo quelli in posizione dispari
@@ -164,7 +163,7 @@ for (let i = 0; i < randomNumbers.length; i++) {
     }
 }
 
-console.log("Somma dei numeri in posizione dispari:", oddSum);
+console.log(chalk.yellow("Somma dei numeri in posizione dispari:"), chalk.green(oddSum));
 
 // SNACK 5
 
@@ -190,4 +189,4 @@ const getNames = (objectArray) => {
 
 const onlyAdultsNames = getNames(people);
 
-console.log("Array contenente solo i nomi dei maggiorenni nell'array di oggetti persone:", onlyAdultsNames);
+console.log(chalk.yellow("Array contenente solo i nomi dei maggiorenni nell'array di oggetti persone:"), onlyAdultsNames);
