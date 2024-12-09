@@ -153,3 +153,41 @@ console.log(chalk.yellow('Lista invitati: ') + chalk.green(falseGuestsArray.join
 
 // SNACK 4
 
+console.log(randomNumbers);
+let oddSum = 0;
+
+// ciclo per verificare l'indice di ogni numero e sommare solo quelli in posizione dispari
+for (let i = 0; i < randomNumbers.length; i++) {
+    const curNum = randomNumbers[i];
+    if (i % 2 === 0) {
+        oddSum += curNum;
+    }
+}
+
+console.log("Somma dei numeri in posizione dispari:", oddSum);
+
+// SNACK 5
+
+// array di oggetti
+const people = [
+    { name: "Alice", age: 17 },
+    { name: "Bob", age: 20 },
+    { name: "Charlie", age: 15 },
+    { name: "David", age: 21 }
+  ];  
+
+// funzione per restituire solo i nomi dei maggiorenni
+const getNames = (objectArray) => {
+    const newArray = [];
+    objectArray.map(object => {
+        if(object.age >= 18) {
+            newArray.push(object.name);
+        }
+    })
+
+    return newArray;
+}
+
+const onlyAdultsNames = getNames(people);
+
+console.log("Array contenente solo i nomi dei maggiorenni nell'array di oggetti persone:", onlyAdultsNames);
